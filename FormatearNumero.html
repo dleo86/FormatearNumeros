@@ -1,0 +1,34 @@
+<html>
+<head>
+<script language="JavaScript" type="text/javascript" src="FormatearNumero.js"></script>
+</head>
+<title>Formatear Numeros</title>
+<body>
+		<div>
+			FormatearNumero():<br>
+			<form method="get" onsubmit="javascript:return false;">
+				<input type="text" onkeyup="javascript:document.querySelector('#numFormatResult').innerHTML = FormatearNumeros( this.value );">
+
+				<input type="reset" value="limpiar">
+			</form>
+			<span id="numFormatResult"></span>
+			<br><br>
+			Solo_Numericos():<br>
+			<form method="get" onsubmit="javascript:return false;">
+				<input type="text" onkeyup="javascript:document.querySelector('#numStripResult').innerHTML = EliminarCaracteres( this.value );">
+				<input type="reset" value="limpiar">
+
+			</form>
+			<span id="numStripResult"></span>
+			<br><br>
+			Solo_Numericos() Entonces FormatearNumero():<br>
+			<form method="get" onsubmit="javascript:return false;">
+				<input type="text" onkeyup="javascript:document.querySelector('#numBothResult').innerHTML = FormatearNumeros( EliminarCaracteres( this.value ) );">
+				<input type="reset" value="limpiar">
+			</form>
+
+			<span id="numBothResult"></span>
+		</div>
+</body>
+</html>
+
